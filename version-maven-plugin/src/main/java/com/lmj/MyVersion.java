@@ -28,6 +28,8 @@ public class MyVersion extends AbstractMojo {
     @Parameter
     private String patch;
     @Parameter
+    private String fileName;
+    @Parameter
     private String gitversion;
 
 
@@ -38,10 +40,10 @@ public class MyVersion extends AbstractMojo {
         System.out.println("项目的根路径。。。。"+patch);
         try {
             //判断是否已经存在了
-            String filePatch = patch + "version.properties";
+            String filePatch = patch + fileName;
             FileWriter fileWriter = null;
-            if(!FileUtil.exist(patch)){
-                File touch = FileUtil.touch(patch + "version.properties");
+            if(!FileUtil.exist(filePatch)){
+                File touch = FileUtil.touch(filePatch);
                 fileWriter = new FileWriter(touch);
             }else{
                 fileWriter = new FileWriter(filePatch);
