@@ -1,4 +1,4 @@
-package com.lmj.practice.proxyPatternInstance.controller;
+package com.lmj.practice.controller;
 
 import com.lmj.practice.proxyPatternInstance.annotation.InvokeRecordAnno;
 import org.springframework.web.bind.annotation.GetMapping;
