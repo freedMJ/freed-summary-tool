@@ -1,8 +1,8 @@
-package com.lmj.practice.aspect;
+package com.lmj.practice.proxyPatternInstance.aspect;
 
-import com.lmj.practice.aspect.base.BaseMethodAspect;
-import com.lmj.practice.handler.InvokeRecordHandler;
-import com.lmj.practice.handler.base.MethodAdviceHandler;
+import com.lmj.practice.proxyPatternInstance.aspect.base.BaseMethodAspect;
+import com.lmj.practice.proxyPatternInstance.handler.InvokeRecordHandler;
+import com.lmj.practice.proxyPatternInstance.handler.base.MethodAdviceHandler;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.core.annotation.Order;
@@ -20,7 +20,7 @@ public class InvokeRecordAspect extends BaseMethodAspect {
      * 指定切点（处理打上 InvokeRecordAnno 的方法）
      */
     @Override
-    @Pointcut("@annotation(com.lmj.practice.annotation.InvokeRecordAnno)")
+    @Pointcut("@annotation(com.lmj.practice.proxyPatternInstance.annotation.InvokeRecordAnno)")
     protected void pointcut() { }
 
 

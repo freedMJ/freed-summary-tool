@@ -1,6 +1,6 @@
-package com.lmj.practice.aspect.base;
+package com.lmj.practice.proxyPatternInstance.aspect.base;
 
-import com.lmj.practice.handler.base.MethodAdviceHandler;
+import com.lmj.practice.proxyPatternInstance.handler.base.MethodAdviceHandler;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.springframework.beans.BeansException;

@@ -1,4 +1,4 @@
-package com.lmj.practice.annotation;
+package com.lmj.practice.proxyPatternInstance.annotation;
 
 
 import java.lang.annotation.ElementType;

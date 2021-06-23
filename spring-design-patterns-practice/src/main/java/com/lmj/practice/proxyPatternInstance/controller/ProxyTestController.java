@@ -1,6 +1,6 @@
-package com.lmj.practice.controller;
+package com.lmj.practice.proxyPatternInstance.controller;
 
-import com.lmj.practice.annotation.InvokeRecordAnno;
+import com.lmj.practice.proxyPatternInstance.annotation.InvokeRecordAnno;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
