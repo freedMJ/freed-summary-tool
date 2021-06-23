@@ -46,7 +46,7 @@ public class MyVersion extends AbstractMojo {
      * 是否允许使用自定义文件名
      **/
     @Parameter
-    private Boolean isCoverFileName;
+    private Boolean isCoverFileName =false;
     /**
      * 创建的自定义信息文件文件名
      **/
@@ -89,7 +89,7 @@ public class MyVersion extends AbstractMojo {
             fileWriter.write("");
 
 
-            fileWriter.append("项目版本"+"\r\n");
+            fileWriter.append("#项目版本"+"\r\n");
             String versionStr = version!=null?version:"";
             fileWriter.append("version="+versionStr+"\r\n");
 
@@ -109,7 +109,7 @@ public class MyVersion extends AbstractMojo {
             fileWriter.append("buildtime="+ DateUtil.format(new Date(),"yyyy-MM-dd HH:mm:ss")+"\r\n");
 
         } catch (Exception e) {
-            System.out.println("创建打包信息文件失败，失败原因===="+e);
+            System.out.println("创建打包信息文件失败，失败原因===="+e.getMessage());
         }
 
     }
